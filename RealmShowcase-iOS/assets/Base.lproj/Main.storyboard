@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="36L-gq-aZf">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Master-->
+        <scene sceneID="twn-ds-dCe">
+            <objects>
+                <navigationController title="Master" id="36L-gq-aZf" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="ZOj-fa-4UQ">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="bDI-QE-Efl" kind="relationship" relationship="rootViewController" id="Qfo-Lp-xP7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GLM-FP-XEk" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-38" y="-630"/>
+        </scene>
+        <!--Master-->
+        <scene sceneID="QMc-0V-OKo">
+            <objects>
+                <tableViewController title="Master" clearsSelectionOnViewWillAppear="NO" id="bDI-QE-Efl" customClass="MasterViewController" customModule="RealmShowcase_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="kpz-d2-XOC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="RepoTableViewCell" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="vr8-Ea-2cv" detailTextLabel="h1H-71-85q" style="IBUITableViewCellStyleSubtitle" id="vdF-Hx-DIO" customClass="RepoTableViewCell" customModule="RealmShowcase_iOS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="86" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vdF-Hx-DIO" id="xWu-tB-lQW">
+                                    <frame key="frameInset" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vr8-Ea-2cv">
+                                            <frame key="frameInset" minX="15" minY="6" width="31.5" height="19.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="h1H-71-85q">
+                                            <frame key="frameInset" minX="15" minY="25.5" width="40.5" height="13.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <segue destination="334-DK-bds" kind="show" id="jIf-vX-Qb5">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="bDI-QE-Efl" id="kKB-jN-UJs"/>
+                            <outlet property="delegate" destination="bDI-QE-Efl" id="Kxh-ke-keu"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Master" id="xke-SR-jQ3"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DzP-9h-bG7" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="709" y="-630"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="vhD-mT-Ml2">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="334-DK-bds" customClass="DetailViewController" customModule="RealmShowcase_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hgp-hx-Si5"/>
+                        <viewControllerLayoutGuide type="bottom" id="4Wn-4L-p11"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bgz-NB-gyt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GPI-qr-yOg">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="147" id="T3r-1I-rf3"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="25" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ixu-pD-rzV">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="50"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dwV-lW-IfW">
+                                <connections>
+                                    <action selector="toggleFavorite:" destination="334-DK-bds" eventType="valueChanged" id="obY-VU-Wsa"/>
+                                </connections>
+                            </switch>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="8Bg-gv-ORk">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="UKF-1R-D8Z"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="💖"/>
+                                    <segment title="🚀"/>
+                                    <segment title="🤕"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changeSymbol:" destination="334-DK-bds" eventType="valueChanged" id="Jcx-DP-huz"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8Bg-gv-ORk" firstAttribute="leading" secondItem="dwV-lW-IfW" secondAttribute="trailing" constant="18.5" id="1Q5-t3-Q7g"/>
+                            <constraint firstItem="ixu-pD-rzV" firstAttribute="top" secondItem="GPI-qr-yOg" secondAttribute="bottom" constant="36" id="4Ci-Qe-3YS"/>
+                            <constraint firstItem="8Bg-gv-ORk" firstAttribute="centerY" secondItem="dwV-lW-IfW" secondAttribute="centerY" id="9ZD-RO-kYO"/>
+                            <constraint firstItem="ixu-pD-rzV" firstAttribute="height" secondItem="GPI-qr-yOg" secondAttribute="height" id="C3f-2x-G1g"/>
+                            <constraint firstItem="ixu-pD-rzV" firstAttribute="width" secondItem="GPI-qr-yOg" secondAttribute="width" multiplier="0.9" id="R6P-LG-8Fe"/>
+                            <constraint firstItem="dwV-lW-IfW" firstAttribute="top" secondItem="ixu-pD-rzV" secondAttribute="bottom" constant="19" id="UTq-8n-1zM"/>
+                            <constraint firstAttribute="trailing" secondItem="GPI-qr-yOg" secondAttribute="trailing" id="XQQ-EI-5vG"/>
+                            <constraint firstItem="ixu-pD-rzV" firstAttribute="centerX" secondItem="GPI-qr-yOg" secondAttribute="centerX" id="j7m-uw-F1Q"/>
+                            <constraint firstItem="GPI-qr-yOg" firstAttribute="leading" secondItem="bgz-NB-gyt" secondAttribute="leading" id="rTd-qB-KFV"/>
+                            <constraint firstItem="GPI-qr-yOg" firstAttribute="top" secondItem="hgp-hx-Si5" secondAttribute="bottom" id="tUT-mc-CDp"/>
+                            <constraint firstItem="dwV-lW-IfW" firstAttribute="centerX" secondItem="ixu-pD-rzV" secondAttribute="centerX" constant="-90" id="vv2-Bg-4Q5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="favoriteSymbol" destination="8Bg-gv-ORk" id="yJf-vq-kGT"/>
+                        <outlet property="favorited" destination="dwV-lW-IfW" id="WeE-sB-KhR"/>
+                        <outlet property="image" destination="GPI-qr-yOg" id="eUa-0c-x0R"/>
+                        <outlet property="name" destination="ixu-pD-rzV" id="fDK-EP-HzF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bXJ-jp-QZK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1488.8" y="-631.0344827586207"/>
+        </scene>
+    </scenes>
+</document>
