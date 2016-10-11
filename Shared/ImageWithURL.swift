@@ -68,7 +68,7 @@ extension ImageView {
                     self?.image = Image(data: data)
                 })
             }
-        }) .resume()
+        }).resume()
     }
 }
 #endif

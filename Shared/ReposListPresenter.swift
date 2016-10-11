@@ -19,6 +19,10 @@
 import Foundation
 import RealmSwift
 
+//
+// presents an up to date, sorted and filtered list of repos
+// implements cross-platform tabe data source methods
+//
 class ReposListPresenter: NSObject {
 
     private var refreshToken: NotificationToken?

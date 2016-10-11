@@ -19,16 +19,16 @@
 import Foundation
 
 //
-// A simple GitHub API client
+// A simple GitHub Search API client
 //
 class GitHubAPI {
     
-    // gets a list of repo json items from github and converts them to objects
+    // gets a list of repos from github and converts them to Repository objects
     static func getRepos(count: Int = 100, _ completion: @escaping ([Repository])-> Void) {
         
-        let reposUrl = URL(string: "https://api.github.com/search/repositories?q=language:swift&per_page=\(count)")!
-        let request = URLRequest(url: reposUrl)
-        
+        let reposUrlString = String(format: "https://api.github.com/search/repositories?q=language:swift&per_page=%d", count)
+        let request = URLRequest(url: URL(string: reposUrlString)!)
+
         URLSession.shared.dataTask(with: request, completionHandler: {data, response, error in
             do {
                 if let error = error {
