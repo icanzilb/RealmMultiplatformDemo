@@ -33,6 +33,7 @@ class ReposListPresenter: NSObject {
     }
 
     func loadRepos(searchFor term: String? = nil, updated: @escaping (RealmCollectionChange<Results<Repository>>)-> Void) {
+        refreshToken?.stop()
         repos = Repository.all(searchTerm: term)
         refreshToken = repos?.addNotificationBlock(updated)
     }
