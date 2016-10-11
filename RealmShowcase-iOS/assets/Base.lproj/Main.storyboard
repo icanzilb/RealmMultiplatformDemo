@@ -12,6 +12,7 @@
             <objects>
                 <navigationController title="Master" id="36L-gq-aZf" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="ZOj-fa-4UQ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -68,7 +69,7 @@
                             <outlet property="delegate" destination="bDI-QE-Efl" id="Kxh-ke-keu"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Master" id="xke-SR-jQ3"/>
+                    <navigationItem key="navigationItem" title="Repos" id="xke-SR-jQ3"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DzP-9h-bG7" sceneMemberID="firstResponder"/>
             </objects>

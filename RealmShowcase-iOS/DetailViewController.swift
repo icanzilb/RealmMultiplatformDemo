@@ -16,12 +16,10 @@
 //
 ////////////////////////////////////////////////////////////////////////////
 
-
 import UIKit
 
 //
-// This controller shows displays a single repo details and
-// allows the user to mark it as favorite
+// Displays single repo details
 //
 class DetailViewController: UIViewController {
     

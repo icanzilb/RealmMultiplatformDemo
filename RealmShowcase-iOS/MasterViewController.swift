@@ -16,12 +16,10 @@
 //
 ////////////////////////////////////////////////////////////////////////////
 
-
 import UIKit
 
 //
-// This controller shows a searcheable list of repos from Realm
-// and also updates the peristed repos with latest data from github.
+// Fetches latest top repos, offers search locally
 //
 class MasterViewController: UITableViewController {
 
