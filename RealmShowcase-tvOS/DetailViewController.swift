@@ -20,8 +20,7 @@ import UIKit
 import RealmSwift
 
 //
-// This controller shows displays a single repo details and
-// allows the user to mark it as favorite
+// Displays single repo details
 //
 class DetailViewController: UIViewController {
 
@@ -30,7 +29,6 @@ class DetailViewController: UIViewController {
     @IBOutlet var favorited: UISegmentedControl!
     
     var repo: Repository!
-    private let favorites = FavoritesFactory()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +41,6 @@ class DetailViewController: UIViewController {
     }
     
     @IBAction func toggleFavorite(_ sender: UISegmentedControl) {
-        try! favorites.toggle(sender.selectedSegmentIndex == 1, repo: repo)
+        try! repo.toggle(favorite: sender.selectedSegmentIndex == 1)
     }
 }
