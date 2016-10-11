@@ -39,17 +39,22 @@ class GitHubAPI {
                 let items = response["items"] as! [[String: AnyObject]]
                 
                 //convert json dictionaries to `Repository` objects
-                let repos = items.map {item -> Repository in
+                let repos = items.map {item -> Repository? in
 
-                    //create objects like usual
-                    let repo = Repository()
-                    repo.id = item["id"] as! Int
-                    repo.name = item["name"] as? String
-                    repo.stars = item["stargazers_count"] as! Int
-                    repo.url = item["html_url"] as! String
-                    repo.avatarUrlString = (item["owner"] as! [String: AnyObject])["avatar_url"] as? String ?? ""
-                    return repo
+                    guard let id = item["id"] as? Int,
+                        let name = item["name"] as? String,
+                        let stars = item["stargazers_count"] as? Int,
+                        let url = item["html_url"] as? String,
+                        let owner = item["owner"] as? [String: AnyObject]
+                        else { return nil }
+
+                    //create Repository like usual
+                    return Repository(id: id, stars: stars, url: url,
+                                      avatarUrlString: owner["avatar_url"] as? String ?? "", name: name)
+
                 }
+                .filter {$0 != nil}
+                .map {$0!}
                 
                 completion(repos)
                 

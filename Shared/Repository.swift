@@ -21,7 +21,7 @@ import RealmSwift
 
 class Repository: Object {
 
-    //MARK: - Persisted properties
+    // MARK: - Persisted properties
     
     dynamic var id: Int = 0
     dynamic var stars: Int = 0
@@ -31,14 +31,24 @@ class Repository: Object {
     dynamic var name: String?
     dynamic var favorite: Favorite?
     
-    //MARK: - Dynamic non-persisted properties
+    // MARK: - Dynamic non-persisted properties
     
     var avatarUrl: URL? {
         get { return URL(string: avatarUrlString) }
         set { avatarUrlString = avatarUrl?.absoluteString ?? "" }
     }
-    
-    //MARK: - Model meta information
+
+    // MARK: - Custom init
+    convenience init(id: Int, stars: Int, url: String, avatarUrlString: String, name: String) {
+        self.init()
+        self.id = id
+        self.stars = stars
+        self.url = url
+        self.avatarUrlString = avatarUrlString
+        self.name = name
+    }
+
+    // MARK: - Model meta information
     override static func primaryKey() -> String? {
         return "id"
     }
