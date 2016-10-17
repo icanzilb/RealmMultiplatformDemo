@@ -66,7 +66,6 @@ class ReposListPresenter: NSObject {
         }
 
         func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! RepoCollectionViewCell
             cell.display(repo: repos![indexPath.item])
             return cell
