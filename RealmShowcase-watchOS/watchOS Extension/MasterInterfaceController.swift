@@ -48,21 +48,11 @@ class MasterInterfaceController: WKInterfaceController {
 
             for (index, repo) in repositories.enumerated() {
                 let controller = table.rowController(at: index) as! RepoRowController
-                
-                controller.text.setText(nil)
-                if let favorite = repo.favorite {
-                    controller.text.setText("\(favorite.symbol) \(repo.name!)")
-                } else {
-                    controller.text.setText(repo.name)
-                }
-                controller.detailText.setText("\(repo.stars) ⭐️")
+                controller.text.setText(repo.name)
+                controller.detailText.setText(repo.starsDecorated)
             }
 
-            if reposPresenter.repos!.count == 0 {
-                setTitle("Loading...")
-            } else {
-                setTitle("Repos")
-            }
+            setTitle(reposPresenter.repos!.isEmpty ? "Loading..." : "Repos")
         }
 
     }

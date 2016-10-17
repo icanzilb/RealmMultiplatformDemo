@@ -40,7 +40,7 @@ class DetailInterfaceController: WKInterfaceController {
             self.repo = repo
             self.image.setImageWithURL(repo.avatarUrl, placeholder: UIImage(named: "loading")!)
             name.setText(repo.name)
-            stars.setText("\(repo.stars) ⭐️")
+            stars.setText(repo.starsDecorated)
             favorited.setOn(repo.favorite != nil)
         }
     }

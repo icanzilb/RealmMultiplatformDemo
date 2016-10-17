@@ -42,12 +42,8 @@ class RepoCollectionViewCell: UICollectionViewCell {
     }
 
     func display(repo: Repository) {
-        text.text = repo.name ?? ""
-        detailText.text = "\(repo.stars) ⭐️"
+        text.text = repo.nameDecorated
+        detailText.text = repo.starsDecorated
         imageUrl = repo.avatarUrl
-
-        if let favorite = repo.favorite {
-            text.text! += " " + favorite.symbol
-        }
     }
 }
