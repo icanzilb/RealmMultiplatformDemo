@@ -24,9 +24,11 @@ class Favorite: Object {
     //persisted property
     dynamic var symbol = "💖"
 
-    var segmentIndex: Int? {
+    var symbolIndex: Int? {
         return ["💖", "🚀", "🤕"].index(of: symbol)
     }
+
+    static let noSymbolIndex = -1
 }
 
 // MARK: - Favorite model methods

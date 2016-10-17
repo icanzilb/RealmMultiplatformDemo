@@ -38,6 +38,17 @@ class Repository: Object {
         set { avatarUrlString = avatarUrl?.absoluteString ?? "" }
     }
 
+    var starsDecorated: String {
+        return "\(stars) ⭐️"
+    }
+
+    var nameDecorated: String {
+        guard let name = name else {return ""}
+        guard let favorite = favorite else {return name}
+
+        return name + " " + favorite.symbol
+    }
+
     // MARK: - Custom init
     convenience init(id: Int, stars: Int, url: String, avatarUrlString: String, name: String) {
         self.init()

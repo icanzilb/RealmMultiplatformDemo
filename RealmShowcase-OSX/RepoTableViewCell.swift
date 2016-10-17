@@ -34,12 +34,8 @@ class RepoTableViewCell: NSTableCellView {
     }
 
     func display(repo: Repository) {
-        text.stringValue = repo.name ?? ""
-        detailText.stringValue = "\(repo.stars) ⭐️"
+        text.stringValue = repo.nameDecorated
+        detailText.stringValue = repo.starsDecorated
         imageUrl = repo.avatarUrl
-
-        if let favorite = repo.favorite {
-            text.stringValue += " " + favorite.symbol
-        }
     }
 }

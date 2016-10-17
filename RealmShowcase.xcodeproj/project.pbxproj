@@ -105,11 +105,26 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		13FEA355B3A49DA6E77A1A8C /* Pods-RealmTasks-RealmShowcase-OSX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmTasks-RealmShowcase-OSX.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealmTasks-RealmShowcase-OSX/Pods-RealmTasks-RealmShowcase-OSX.release.xcconfig"; sourceTree = "<group>"; };
+		2E26D8F9DA4F99E1712173AF /* Pods-Showcase-RealmShowcase-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Showcase-RealmShowcase-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Showcase-RealmShowcase-iOS/Pods-Showcase-RealmShowcase-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		300F650E7A18A27BF38D6599 /* Pods-Showcase-RealmShowcase-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Showcase-RealmShowcase-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Showcase-RealmShowcase-tvOS/Pods-Showcase-RealmShowcase-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		38BC2ED07CF5690C6D902A02 /* Pods_RealmShowcase_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmShowcase_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3985152C1E3FD47C2E94768B /* Pods-RealmTasks-RealmShowcase-OSX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmTasks-RealmShowcase-OSX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmTasks-RealmShowcase-OSX/Pods-RealmTasks-RealmShowcase-OSX.debug.xcconfig"; sourceTree = "<group>"; };
+		43BC19EEC05767DBBA6C4C0F /* Pods-Showcase-RealmShowcase-watchOS Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Showcase-RealmShowcase-watchOS Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Showcase-RealmShowcase-watchOS Extension/Pods-Showcase-RealmShowcase-watchOS Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		4BE95A8AF9D85F0B12FF348C /* Pods-RealmTasks-RealmShowcase-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmTasks-RealmShowcase-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmTasks-RealmShowcase-iOS/Pods-RealmTasks-RealmShowcase-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		52C75A14AD1BF9E988FA6CBA /* Pods-Showcase-RealmShowcase-watchOS Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Showcase-RealmShowcase-watchOS Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-Showcase-RealmShowcase-watchOS Extension/Pods-Showcase-RealmShowcase-watchOS Extension.release.xcconfig"; sourceTree = "<group>"; };
 		5797EC1B2DFD67E3DF3BD4D3 /* Pods-RealmShowcase-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmShowcase-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealmShowcase-tvOS/Pods-RealmShowcase-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		5B60A800008DD5F0976D14FF /* Pods-RealmShowcase-watchOS Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmShowcase-watchOS Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmShowcase-watchOS Extension/Pods-RealmShowcase-watchOS Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		5F73E5744AED6BD8D325C5EC /* Pods_Showcase_RealmShowcase_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Showcase_RealmShowcase_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60F1A92CD5FDACB1D96FEE85 /* Pods_Showcase_RealmShowcase_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Showcase_RealmShowcase_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62F4572EB937407F4CEA38BF /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6849D5B7521320969C78F163 /* Pods-Showcase-RealmShowcase-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Showcase-RealmShowcase-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Showcase-RealmShowcase-tvOS/Pods-Showcase-RealmShowcase-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		6E74AA840CBB689CC23D2A65 /* Pods_RealmShowcase_OSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmShowcase_OSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		791167AC6F5CCF51D0A3650C /* Pods-RealmTasks-RealmShowcase-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmTasks-RealmShowcase-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealmTasks-RealmShowcase-tvOS/Pods-RealmTasks-RealmShowcase-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		7F28A87D232B5DA7E1BB98B5 /* Pods_Showcase_RealmShowcase_OSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Showcase_RealmShowcase_OSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80BB4AF8FA38ECBE6022F2C2 /* Pods-Showcase-RealmShowcase-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Showcase-RealmShowcase-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Showcase-RealmShowcase-iOS/Pods-Showcase-RealmShowcase-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		818456E0F0906171367EDA7A /* Pods-RealmTasks-RealmShowcase-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmTasks-RealmShowcase-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealmTasks-RealmShowcase-iOS/Pods-RealmTasks-RealmShowcase-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		859A299B9A9B2E313388F2A0 /* Pods_RealmTasks_RealmShowcase_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmTasks_RealmShowcase_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C2255261C91F21E00D8E974 /* RepoDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoDetailViewController.swift; sourceTree = "<group>"; };
 		9C3D8FC11C92F895000DA57A /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		9C6A4CF01DABF4A500E0CD54 /* ReposListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReposListPresenter.swift; sourceTree = "<group>"; };
@@ -120,6 +135,7 @@
 		9C814A121C92DDB00020E4FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C814A141C92DDB00020E4FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C814A181C92E0B60020E4FA /* RepoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoCollectionViewCell.swift; sourceTree = "<group>"; };
+		9C99AD24F3AE77CC86A74610 /* Pods-RealmTasks-RealmShowcase-watchOS Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmTasks-RealmShowcase-watchOS Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmTasks-RealmShowcase-watchOS Extension/Pods-RealmTasks-RealmShowcase-watchOS Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		9C9A14F61C96CF7A003DEDAA /* RealmShowcase-iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "RealmShowcase-iOS.entitlements"; sourceTree = "<group>"; };
 		9C9A15151C96D9C8003DEDAA /* RepoRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoRowController.swift; sourceTree = "<group>"; };
 		9C9A15171C96DEE9003DEDAA /* DetailInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailInterfaceController.swift; sourceTree = "<group>"; };
@@ -153,14 +169,22 @@
 		9CEA360C1C93203400936192 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CEA360E1C93203400936192 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CEA361D1C9322F800936192 /* MasterInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterInterfaceController.swift; sourceTree = "<group>"; };
+		9E7DCD1073646C08627F7E85 /* Pods_RealmTasks_RealmShowcase_OSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmTasks_RealmShowcase_OSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6A85A12935B9DFE91427218 /* Pods-RealmShowcase-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmShowcase-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmShowcase-tvOS/Pods-RealmShowcase-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		AEEC45A329121E42CF199C3F /* Pods_RealmShowcase_watchOS_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmShowcase_watchOS_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0E837EDC267832419979451 /* Pods-RealmShowcase-watchOS Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmShowcase-watchOS Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealmShowcase-watchOS Extension/Pods-RealmShowcase-watchOS Extension.release.xcconfig"; sourceTree = "<group>"; };
 		B71C8E0B460EA450A02962C6 /* Pods-RealmShowcase-OSX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmShowcase-OSX.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealmShowcase-OSX/Pods-RealmShowcase-OSX.release.xcconfig"; sourceTree = "<group>"; };
 		BB6E5CA782A73DE102436482 /* Pods-RealmShowcase-OSX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmShowcase-OSX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmShowcase-OSX/Pods-RealmShowcase-OSX.debug.xcconfig"; sourceTree = "<group>"; };
+		BFC9AA5120408F03B5BB0887 /* Pods_Showcase_RealmShowcase_watchOS_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Showcase_RealmShowcase_watchOS_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C43C014E3BD9899E71AAA5A0 /* Pods-RealmTasks-RealmShowcase-watchOS Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmTasks-RealmShowcase-watchOS Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealmTasks-RealmShowcase-watchOS Extension/Pods-RealmTasks-RealmShowcase-watchOS Extension.release.xcconfig"; sourceTree = "<group>"; };
 		D08B78B4A7CDE92EC358E23F /* Pods-RealmShowcase-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmShowcase-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmShowcase-iOS/Pods-RealmShowcase-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		D81F756EAA9C356C6A284C3C /* Pods-Showcase-RealmShowcase-OSX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Showcase-RealmShowcase-OSX.release.xcconfig"; path = "Pods/Target Support Files/Pods-Showcase-RealmShowcase-OSX/Pods-Showcase-RealmShowcase-OSX.release.xcconfig"; sourceTree = "<group>"; };
 		EB72A6FF5141B6E6365AF61C /* Pods_RealmShowcase_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmShowcase_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECEC648097CAEB22C1F38D60 /* Pods-RealmShowcase-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmShowcase-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealmShowcase-iOS/Pods-RealmShowcase-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		F0D4839E784740A0648B9BD3 /* Pods_RealmTasks_RealmShowcase_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmTasks_RealmShowcase_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1800147F27B7B24B662D7DA /* Pods-RealmTasks-RealmShowcase-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmTasks-RealmShowcase-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmTasks-RealmShowcase-tvOS/Pods-RealmTasks-RealmShowcase-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		F234B650786EAE97ABE71EDE /* Pods_RealmTasks_RealmShowcase_watchOS_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmTasks_RealmShowcase_watchOS_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF2AADF45D7E8224BBE25C66 /* Pods-Showcase-RealmShowcase-OSX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Showcase-RealmShowcase-OSX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Showcase-RealmShowcase-OSX/Pods-Showcase-RealmShowcase-OSX.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +238,14 @@
 				EB72A6FF5141B6E6365AF61C /* Pods_RealmShowcase_iOS.framework */,
 				38BC2ED07CF5690C6D902A02 /* Pods_RealmShowcase_tvOS.framework */,
 				AEEC45A329121E42CF199C3F /* Pods_RealmShowcase_watchOS_Extension.framework */,
+				9E7DCD1073646C08627F7E85 /* Pods_RealmTasks_RealmShowcase_OSX.framework */,
+				F0D4839E784740A0648B9BD3 /* Pods_RealmTasks_RealmShowcase_iOS.framework */,
+				859A299B9A9B2E313388F2A0 /* Pods_RealmTasks_RealmShowcase_tvOS.framework */,
+				F234B650786EAE97ABE71EDE /* Pods_RealmTasks_RealmShowcase_watchOS_Extension.framework */,
+				7F28A87D232B5DA7E1BB98B5 /* Pods_Showcase_RealmShowcase_OSX.framework */,
+				5F73E5744AED6BD8D325C5EC /* Pods_Showcase_RealmShowcase_iOS.framework */,
+				60F1A92CD5FDACB1D96FEE85 /* Pods_Showcase_RealmShowcase_tvOS.framework */,
+				BFC9AA5120408F03B5BB0887 /* Pods_Showcase_RealmShowcase_watchOS_Extension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -229,6 +261,22 @@
 				5797EC1B2DFD67E3DF3BD4D3 /* Pods-RealmShowcase-tvOS.release.xcconfig */,
 				5B60A800008DD5F0976D14FF /* Pods-RealmShowcase-watchOS Extension.debug.xcconfig */,
 				B0E837EDC267832419979451 /* Pods-RealmShowcase-watchOS Extension.release.xcconfig */,
+				3985152C1E3FD47C2E94768B /* Pods-RealmTasks-RealmShowcase-OSX.debug.xcconfig */,
+				13FEA355B3A49DA6E77A1A8C /* Pods-RealmTasks-RealmShowcase-OSX.release.xcconfig */,
+				4BE95A8AF9D85F0B12FF348C /* Pods-RealmTasks-RealmShowcase-iOS.debug.xcconfig */,
+				818456E0F0906171367EDA7A /* Pods-RealmTasks-RealmShowcase-iOS.release.xcconfig */,
+				F1800147F27B7B24B662D7DA /* Pods-RealmTasks-RealmShowcase-tvOS.debug.xcconfig */,
+				791167AC6F5CCF51D0A3650C /* Pods-RealmTasks-RealmShowcase-tvOS.release.xcconfig */,
+				9C99AD24F3AE77CC86A74610 /* Pods-RealmTasks-RealmShowcase-watchOS Extension.debug.xcconfig */,
+				C43C014E3BD9899E71AAA5A0 /* Pods-RealmTasks-RealmShowcase-watchOS Extension.release.xcconfig */,
+				FF2AADF45D7E8224BBE25C66 /* Pods-Showcase-RealmShowcase-OSX.debug.xcconfig */,
+				D81F756EAA9C356C6A284C3C /* Pods-Showcase-RealmShowcase-OSX.release.xcconfig */,
+				80BB4AF8FA38ECBE6022F2C2 /* Pods-Showcase-RealmShowcase-iOS.debug.xcconfig */,
+				2E26D8F9DA4F99E1712173AF /* Pods-Showcase-RealmShowcase-iOS.release.xcconfig */,
+				300F650E7A18A27BF38D6599 /* Pods-Showcase-RealmShowcase-tvOS.debug.xcconfig */,
+				6849D5B7521320969C78F163 /* Pods-Showcase-RealmShowcase-tvOS.release.xcconfig */,
+				43BC19EEC05767DBBA6C4C0F /* Pods-Showcase-RealmShowcase-watchOS Extension.debug.xcconfig */,
+				52C75A14AD1BF9E988FA6CBA /* Pods-Showcase-RealmShowcase-watchOS Extension.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";

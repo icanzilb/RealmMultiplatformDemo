@@ -37,19 +37,18 @@ class RepoDetailViewController: NSViewController {
     
     func updateUI() {
         view.isHidden = false
-        title = repo.name
         name.title = repo.name ?? ""
         image.setImageWithURL(repo.avatarUrl)
         favorited.state = repo.favorite != nil ? NSOnState : NSOffState
         favoriteSymbol.isEnabled = (favorited.state == NSOnState)
-        favoriteSymbol.selectedSegment = repo.favorite?.segmentIndex ?? -1
+        favoriteSymbol.selectedSegment = repo.favorite?.symbolIndex ?? Favorite.noSymbolIndex
     }
     
     @IBAction func toggleFavorite(_ sender: NSButton) {
         try! repo.toggle(favorite: sender.state == NSOnState)
 
         favoriteSymbol.isEnabled = (favorited.state == NSOnState)
-        favoriteSymbol.selectedSegment = repo.favorite?.segmentIndex ?? -1
+        favoriteSymbol.selectedSegment = repo.favorite?.symbolIndex ?? Favorite.noSymbolIndex
     }
 
     @IBAction func changeSymbol(_ sender: NSSegmentedControl) {

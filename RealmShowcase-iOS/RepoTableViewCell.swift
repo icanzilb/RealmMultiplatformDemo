@@ -36,12 +36,8 @@ class RepoTableViewCell: UITableViewCell {
     }
 
     func display(repo: Repository) {
-        textLabel!.text = repo.name!
-        detailTextLabel!.text = "\(repo.stars) ⭐️"
+        textLabel!.text = repo.nameDecorated
+        detailTextLabel!.text = repo.starsDecorated
         imageUrl = repo.avatarUrl
-
-        if let favorite = repo.favorite {
-            textLabel!.text! += " " + favorite.symbol
-        }
     }
 }

@@ -38,14 +38,14 @@ class DetailViewController: UIViewController {
         image.setImageWithURL(repo.avatarUrl)
         favorited.isOn = repo.favorite != nil
         favoriteSymbol.isEnabled = favorited.isOn
-        favoriteSymbol.selectedSegmentIndex = repo.favorite?.segmentIndex ?? -1
+        favoriteSymbol.selectedSegmentIndex = repo.favorite?.symbolIndex ?? Favorite.noSymbolIndex
     }
 
     @IBAction func toggleFavorite(_ sender: UISwitch) {
         try! repo.toggle(favorite: sender.isOn)
 
         favoriteSymbol.isEnabled = favorited.isOn
-        favoriteSymbol.selectedSegmentIndex = repo.favorite?.segmentIndex ?? -1
+        favoriteSymbol.selectedSegmentIndex = repo.favorite?.symbolIndex ?? Favorite.noSymbolIndex
     }
 
     @IBAction func changeSymbol(_ sender: UISegmentedControl) {
