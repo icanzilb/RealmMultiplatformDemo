@@ -24,10 +24,13 @@ class Favorite: Object {
     //persisted property
     dynamic var symbol = "💖"
 
+    //dynamic property
     var symbolIndex: Int? {
-        return ["💖", "🚀", "🤕"].index(of: symbol)
+        return Favorite.symbols.index(of: symbol)
     }
 
+    //static properties
+    static let symbols = ["💖", "🚀", "🤕"]
     static let noSymbolIndex = -1
 }
 
