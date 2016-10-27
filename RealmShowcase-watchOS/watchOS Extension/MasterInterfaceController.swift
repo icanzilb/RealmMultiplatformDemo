@@ -48,7 +48,7 @@ class MasterInterfaceController: WKInterfaceController {
 
             for (index, repo) in repositories.enumerated() {
                 let controller = table.rowController(at: index) as! RepoRowController
-                controller.text.setText(repo.name)
+                controller.text.setText(repo.nameDecorated)
                 controller.detailText.setText(repo.starsDecorated)
             }
 
