@@ -53,8 +53,7 @@ class GitHubAPI {
                                       avatarUrlString: owner["avatar_url"] as? String ?? "", name: name)
 
                 }
-                .filter {$0 != nil}
-                .map {$0!}
+                .flatMap {$0}
                 
                 completion(repos)
                 
