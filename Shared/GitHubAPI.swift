@@ -18,10 +18,14 @@
 
 import Foundation
 
+protocol RepoProvider {
+    static func getRepos(count: Int, _ completion: @escaping ([Repository])-> Void)
+}
+
 //
 // A simple GitHub Search API client
 //
-class GitHubAPI {
+class GitHubAPI: RepoProvider {
     
     // gets a list of repos from github and converts them to Repository objects
     static func getRepos(count: Int = 100, _ completion: @escaping ([Repository])-> Void) {

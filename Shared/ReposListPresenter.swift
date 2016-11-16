@@ -27,6 +27,11 @@ class ReposListPresenter: NSObject {
 
     private var refreshToken: NotificationToken?
     private(set) var repos: Results<Repository>?
+    private let provider: RepoProvider
+
+    init(provider: RepoProvider) {
+        self.provider = provider
+    }
 
     func refresh(count: Int = 100) {
         GitHubAPI.getRepos(count: count, Repository.add)

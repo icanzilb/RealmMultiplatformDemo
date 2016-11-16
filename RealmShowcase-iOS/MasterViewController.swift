@@ -23,7 +23,7 @@ import UIKit
 //
 class MasterViewController: UITableViewController {
 
-    fileprivate var reposPresenter = ReposListPresenter()
+    fileprivate var reposPresenter = ReposListPresenter(provider: GitHubAPI())
     private let searchController = UISearchController(searchResultsController: nil)
 
     // MARK: - View Controller

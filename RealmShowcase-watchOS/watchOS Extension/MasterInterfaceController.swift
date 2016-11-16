@@ -25,7 +25,7 @@ import WatchKit
 class MasterInterfaceController: WKInterfaceController {
 
     @IBOutlet weak var table: WKInterfaceTable!
-    private let reposPresenter = ReposListPresenter()
+    private let reposPresenter = ReposListPresenter(provider: GitHubAPI())
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)

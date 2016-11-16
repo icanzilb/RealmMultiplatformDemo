@@ -24,7 +24,7 @@ import UIKit
 class MasterViewController: UICollectionViewController {
 
     @IBOutlet weak var searchField: UITextField!
-    fileprivate let reposPresenter = ReposListPresenter()
+    fileprivate let reposPresenter = ReposListPresenter(provider: GitHubAPI())
 
     override func viewDidLoad() {
         super.viewDidLoad()

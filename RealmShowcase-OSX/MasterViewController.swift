@@ -23,7 +23,7 @@ import Cocoa
 //
 class MasterViewController: NSViewController {
 
-    fileprivate var reposPresenter = ReposListPresenter()
+    fileprivate var reposPresenter = ReposListPresenter(provider: GitHubAPI())
     private var detailsViewController: RepoDetailViewController!
 
     @IBOutlet weak var tableView: NSTableView!
