@@ -34,7 +34,7 @@ class ReposListPresenter: NSObject {
     }
 
     func refresh(count: Int = 100) {
-        provider.getRepos(count: count, Repository.add)
+        provider.updateRepos(count: count, Repository.add)
     }
 
     func loadRepos(searchFor term: String? = nil, updated: @escaping (RealmCollectionChange<Results<Repository>>)-> Void) {

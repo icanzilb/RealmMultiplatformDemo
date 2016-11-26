@@ -19,7 +19,7 @@
 import Foundation
 
 protocol RepoProvider {
-    func getRepos(count: Int, _ completion: @escaping ([Repository])-> Void)
+    func updateRepos(count: Int, _ completion: @escaping ([Repository])-> Void)
 }
 
 //
