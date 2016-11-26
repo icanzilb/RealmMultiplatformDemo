@@ -28,7 +28,7 @@ protocol RepoProvider {
 class GitHubAPI: RepoProvider {
     
     // gets a list of repos from github and converts them to Repository objects
-    func getRepos(count: Int = 100, _ completion: @escaping ([Repository])-> Void) {
+    func updateRepos(count: Int = 100, _ completion: @escaping ([Repository])-> Void) {
         
         let reposUrlString = String(format: "https://api.github.com/search/repositories?q=language:swift&per_page=%d", count)
         let request = URLRequest(url: URL(string: reposUrlString)!)
